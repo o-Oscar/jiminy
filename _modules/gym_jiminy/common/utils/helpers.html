@@ -1,0 +1,579 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>gym_jiminy.common.utils.helpers &mdash; jiminy 1.6.21 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> jiminy
+          
+
+          
+            
+            <img src="../../../../_static/jiminy_logo.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.6.21
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">README</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../README.html">Key features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../README.html#gym-jiminy">Gym Jiminy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../README.html#demo">Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../README.html#getting-started">Getting started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">INSTALLATION</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../INSTALL.html">Linux-based OS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../INSTALL.html#windows-os">Windows OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">TUTORIALS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorial.html">An introduction to Jiminy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API DOC</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/jiminy/index.html">Jiminy C++ API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/jiminy_py/index.html">Jiminy Python API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/gym_jiminy/common/index.html">Gym Jiminy API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Technical Specifications</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../spec/src/tlmc_format_specification.html"><code class="docutils literal notranslate"><span class="pre">tlmc</span></code> Version 1 format specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../spec/pdf/index.html">Downloadable PDF</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">jiminy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>gym_jiminy.common.utils.helpers</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for gym_jiminy.common.utils.helpers</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot; TODO: Write documentation.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Sequence</span><span class="p">,</span> <span class="n">List</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">numba</span> <span class="k">as</span> <span class="nn">nb</span>
+<span class="kn">import</span> <span class="nn">gym</span>
+<span class="kn">from</span> <span class="nn">gym</span> <span class="kn">import</span> <span class="n">spaces</span>
+
+<span class="kn">import</span> <span class="nn">jiminy_py.core</span> <span class="k">as</span> <span class="nn">jiminy</span>
+
+
+<span class="n">SpaceDictNested</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span>  <span class="c1"># type: ignore</span>
+    <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="s1">&#39;SpaceDictNested&#39;</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]</span>  <span class="c1"># type: ignore</span>
+<span class="n">ListStrRecursive</span> <span class="o">=</span> <span class="n">List</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="s1">&#39;ListStrRecursive&#39;</span><span class="p">]]</span>  <span class="c1"># type: ignore</span>
+<span class="n">FieldDictNested</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span>  <span class="c1"># type: ignore</span>
+    <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="s1">&#39;FieldDictNested&#39;</span><span class="p">],</span> <span class="n">ListStrRecursive</span><span class="p">]</span>  <span class="c1"># type: ignore</span>
+
+
+<div class="viewcode-block" id="sample"><a class="viewcode-back" href="../../../../api/gym_jiminy/common/utils/helpers.html#gym_jiminy.common.utils.helpers.sample">[docs]</a><span class="k">def</span> <span class="nf">sample</span><span class="p">(</span><span class="n">low</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span>
+           <span class="n">high</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
+           <span class="n">dist</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;uniform&#39;</span><span class="p">,</span>
+           <span class="n">scale</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
+           <span class="n">enable_log_scale</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+           <span class="n">shape</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">int</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+           <span class="n">rg</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">RandomState</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+           <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Randomly sample values from a given distribution.</span>
+
+<span class="sd">    .. note:</span>
+<span class="sd">        If &#39;low&#39;, &#39;high&#39;, and &#39;scale&#39; are floats, then the output is float if</span>
+<span class="sd">        &#39;shape&#39; is None, otherwise it has type `np.ndarray` and shape &#39;shape&#39;.</span>
+<span class="sd">        Similarly, if any of &#39;low&#39;, &#39;high&#39;, and &#39;scale&#39; are `np.ndarray`, then</span>
+<span class="sd">        its shape follows the broadcasting rules between these variables.</span>
+
+<span class="sd">    :param low: Lower value for bounded distribution, negative-side standard</span>
+<span class="sd">                deviation otherwise.</span>
+<span class="sd">                Optional: -1.0 by default.</span>
+<span class="sd">    :param high: Upper value for bounded distribution, positive-side standard</span>
+<span class="sd">                 deviation otherwise.</span>
+<span class="sd">                 Optional: 1.0 by default.</span>
+<span class="sd">    :param dist: Name of the statistical distribution from which to draw</span>
+<span class="sd">                 samples. It must be a member function for `np.random`.</span>
+<span class="sd">                 Optional: &#39;uniform&#39; by default.</span>
+<span class="sd">    :param scale: Shrink the standard deviation of the distribution around the</span>
+<span class="sd">                  mean by this factor.</span>
+<span class="sd">                  Optional: No scaling by default?</span>
+<span class="sd">    :param enable_log_scale: The sampled values are power of 10.</span>
+<span class="sd">    :param shape: Enforce of the sampling shape. Only available if &#39;low&#39;,</span>
+<span class="sd">                  &#39;high&#39; and &#39;scale&#39; are floats. `None` to disable.</span>
+<span class="sd">                  Optional: Disable by default.</span>
+<span class="sd">    :param rg: Custom random number generator from which to draw samples.</span>
+<span class="sd">               Optional: Default to `np.random`.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Make sure the distribution is supported</span>
+    <span class="k">if</span> <span class="n">dist</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;normal&#39;</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;&#39;</span><span class="si">{</span><span class="n">dist</span><span class="si">}</span><span class="s2">&#39; distribution type is not supported for now.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Extract mean and deviation from min/max</span>
+    <span class="n">mean</span> <span class="o">=</span> <span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">high</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="n">dev</span> <span class="o">=</span> <span class="n">scale</span> <span class="o">*</span> <span class="p">(</span><span class="n">high</span> <span class="o">-</span> <span class="n">low</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+
+    <span class="c1"># Get sample shape.</span>
+    <span class="c1"># Better use dev than mean since it works even if only scale is array.</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dev</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">shape</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">shape</span> <span class="o">=</span> <span class="n">dev</span><span class="o">.</span><span class="n">shape</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">shape</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
+                <span class="n">np</span><span class="o">.</span><span class="n">broadcast</span><span class="p">(</span>
+                    <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">[]),</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">dev</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">[]))</span>
+            <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;&#39;shape&#39; </span><span class="si">{</span><span class="n">shape</span><span class="si">}</span><span class="s2"> must be broadcastable with &#39;low&#39;, &quot;</span>
+                    <span class="sa">f</span><span class="s2">&quot;&#39;high&#39; and &#39;scale&#39; </span><span class="si">{</span><span class="n">dev</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2"> if specified.&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
+
+    <span class="c1"># Sample from normalized distribution.</span>
+    <span class="c1"># Note that some distributions are not normalized by default</span>
+    <span class="k">if</span> <span class="n">rg</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">rg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span>
+    <span class="n">distrib_fn</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">rg</span><span class="p">,</span> <span class="n">dist</span><span class="p">)</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">distrib_fn</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">shape</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">dist</span> <span class="o">==</span> <span class="s1">&#39;uniform&#39;</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">val</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="c1"># Set mean and deviation</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">mean</span> <span class="o">+</span> <span class="n">dev</span> <span class="o">*</span> <span class="n">val</span>
+
+    <span class="c1"># Revert log scale if appropriate</span>
+    <span class="k">if</span> <span class="n">enable_log_scale</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="n">val</span>
+
+    <span class="k">return</span> <span class="n">val</span></div>
+
+
+<div class="viewcode-block" id="is_bounded"><a class="viewcode-back" href="../../../../api/gym_jiminy/common/utils/helpers.html#gym_jiminy.common.utils.helpers.is_bounded">[docs]</a><span class="k">def</span> <span class="nf">is_bounded</span><span class="p">(</span><span class="n">space</span><span class="p">:</span> <span class="n">gym</span><span class="o">.</span><span class="n">Space</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Check wether `gym.spaces.Space` has finite bounds.</span>
+
+<span class="sd">    :param space: Gym.Space on which to operate.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Box</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">space</span><span class="o">.</span><span class="n">is_bounded</span><span class="p">()</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Dict</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="ow">not</span> <span class="n">is_bounded</span><span class="p">(</span><span class="n">subspace</span><span class="p">)</span> <span class="k">for</span> <span class="n">subspace</span> <span class="ow">in</span> <span class="n">space</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Tuple</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="ow">not</span> <span class="n">is_bounded</span><span class="p">(</span><span class="n">subspace</span><span class="p">)</span> <span class="k">for</span> <span class="n">subspace</span> <span class="ow">in</span> <span class="n">space</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="p">(</span>
+            <span class="n">spaces</span><span class="o">.</span><span class="n">Discrete</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">MultiDiscrete</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">MultiBinary</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;Space of type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">space</span><span class="p">)</span><span class="si">}</span><span class="s2"> is not supported.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="zeros"><a class="viewcode-back" href="../../../../api/gym_jiminy/common/utils/helpers.html#gym_jiminy.common.utils.helpers.zeros">[docs]</a><span class="k">def</span> <span class="nf">zeros</span><span class="p">(</span><span class="n">space</span><span class="p">:</span> <span class="n">gym</span><span class="o">.</span><span class="n">Space</span><span class="p">,</span>
+          <span class="n">dtype</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">type</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">SpaceDictNested</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Allocate data structure from `gym.space.Space` and initialize it to zero.</span>
+
+<span class="sd">    :param space: Gym.Space on which to operate.</span>
+<span class="sd">    :param dtype: Must be specified to overwrite original space dtype.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Box</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">space</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span> <span class="ow">or</span> <span class="n">space</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Dict</span><span class="p">):</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">field</span><span class="p">,</span> <span class="n">subspace</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="n">space</span><span class="o">.</span><span class="n">spaces</span><span class="p">):</span>
+            <span class="n">value</span><span class="p">[</span><span class="n">field</span><span class="p">]</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">subspace</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">value</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Tuple</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">zeros</span><span class="p">(</span><span class="n">subspace</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span> <span class="k">for</span> <span class="n">subspace</span> <span class="ow">in</span> <span class="n">space</span><span class="o">.</span><span class="n">spaces</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="p">(</span><span class="n">spaces</span><span class="o">.</span><span class="n">Discrete</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">MultiDiscrete</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Using np.array of 0 dim to be mutable</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">MultiBinary</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">space</span><span class="o">.</span><span class="n">n</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">)</span>
+    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;Space of type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">space</span><span class="p">)</span><span class="si">}</span><span class="s2"> is not supported.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="fill"><a class="viewcode-back" href="../../../../api/gym_jiminy/common/utils/helpers.html#gym_jiminy.common.utils.helpers.fill">[docs]</a><span class="k">def</span> <span class="nf">fill</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">SpaceDictNested</span><span class="p">,</span>
+         <span class="n">fill_value</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Set every element of &#39;data&#39; from `Gym.Space` to scalar &#39;fill_value&#39;.</span>
+
+<span class="sd">    :param data: Data structure to update.</span>
+<span class="sd">    :param fill_value: Value used to fill any scalar from the leaves.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">fill_value</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">subdata</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">values</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+            <span class="n">fill</span><span class="p">(</span><span class="n">subdata</span><span class="p">,</span> <span class="n">fill_value</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">(</span><span class="nb">tuple</span><span class="p">,</span> <span class="nb">list</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">subdata</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+            <span class="n">fill</span><span class="p">(</span><span class="n">subdata</span><span class="p">,</span> <span class="n">fill_value</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s1">&#39;__dict__&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s1">&#39;__slots__&#39;</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Data of type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">}</span><span class="s2"> is not supported.&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Data of immutable type is not supported.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="set_value"><a class="viewcode-back" href="../../../../api/gym_jiminy/common/utils/helpers.html#gym_jiminy.common.utils.helpers.set_value">[docs]</a><span class="k">def</span> <span class="nf">set_value</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">SpaceDictNested</span><span class="p">,</span>
+              <span class="n">value</span><span class="p">:</span> <span class="n">SpaceDictNested</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Partially set &#39;data&#39; from `Gym.Space` to &#39;value&#39;.</span>
+
+<span class="sd">    It avoids memory allocation, so that memory pointers of &#39;data&#39; remains</span>
+<span class="sd">    unchanged. A direct consequences, it is necessary to preallocate memory</span>
+<span class="sd">    beforehand, and to work with fixed shape buffers.</span>
+
+<span class="sd">    .. note::</span>
+<span class="sd">        If &#39;data&#39; is a dictionary, &#39;value&#39; must be a subtree of &#39;data&#39;,</span>
+<span class="sd">        whose leaf values must be broadcastable with the ones of &#39;data&#39;.</span>
+
+<span class="sd">    :param data: Data structure to partially update.</span>
+<span class="sd">    :param value: Unset of data only containing fields to update.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">flat</span><span class="p">[:]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cannot cast &#39;</span><span class="si">{</span><span class="n">data</span><span class="si">}</span><span class="s2">&#39; to &#39;</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&#39;.&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">e</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">field</span><span class="p">,</span> <span class="n">subval</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+            <span class="n">set_value</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">field</span><span class="p">],</span> <span class="n">subval</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">(</span><span class="nb">tuple</span><span class="p">,</span> <span class="nb">list</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">subdata</span><span class="p">,</span> <span class="n">subval</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+            <span class="n">fill</span><span class="p">(</span><span class="n">subdata</span><span class="p">,</span> <span class="n">subval</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Data of type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">}</span><span class="s2"> is not supported.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="copy"><a class="viewcode-back" href="../../../../api/gym_jiminy/common/utils/helpers.html#gym_jiminy.common.utils.helpers.copy">[docs]</a><span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="n">SpaceDictNested</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SpaceDictNested</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Shadow copy recursively &#39;data&#39; from `Gym.Space`, so that only leaves</span>
+<span class="sd">    are still references.</span>
+
+<span class="sd">    :param data: Hierarchical data structure to copy without allocation.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">field</span><span class="p">,</span> <span class="n">subdata</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+            <span class="n">value</span><span class="p">[</span><span class="n">field</span><span class="p">]</span> <span class="o">=</span> <span class="n">copy</span><span class="p">(</span><span class="n">subdata</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">value</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">(</span><span class="nb">tuple</span><span class="p">,</span> <span class="nb">list</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">copy</span><span class="p">(</span><span class="n">subdata</span><span class="p">)</span> <span class="k">for</span> <span class="n">subdata</span> <span class="ow">in</span> <span class="n">data</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span></div>
+
+
+<div class="viewcode-block" id="clip"><a class="viewcode-back" href="../../../../api/gym_jiminy/common/utils/helpers.html#gym_jiminy.common.utils.helpers.clip">[docs]</a><span class="k">def</span> <span class="nf">clip</span><span class="p">(</span><span class="n">space</span><span class="p">:</span> <span class="n">gym</span><span class="o">.</span><span class="n">Space</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="n">SpaceDictNested</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">SpaceDictNested</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Clamp value from Gym.Space to make sure it is within bounds.</span>
+
+<span class="sd">    :param space: Gym.Space on which to operate.</span>
+<span class="sd">    :param value: Value to clamp.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Box</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">multiarray</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">space</span><span class="o">.</span><span class="n">low</span><span class="p">,</span> <span class="n">space</span><span class="o">.</span><span class="n">high</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Dict</span><span class="p">):</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">field</span><span class="p">,</span> <span class="n">subspace</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="n">space</span><span class="o">.</span><span class="n">spaces</span><span class="p">):</span>
+            <span class="n">out</span><span class="p">[</span><span class="n">field</span><span class="p">]</span> <span class="o">=</span> <span class="n">clip</span><span class="p">(</span><span class="n">subspace</span><span class="p">,</span> <span class="n">value</span><span class="p">[</span><span class="n">field</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">out</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Tuple</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">clip</span><span class="p">(</span><span class="n">subspace</span><span class="p">,</span> <span class="n">subvalue</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">subspace</span><span class="p">,</span> <span class="n">subvalue</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="p">(</span>
+            <span class="n">spaces</span><span class="o">.</span><span class="n">Discrete</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">MultiDiscrete</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">MultiBinary</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="n">value</span>  <span class="c1"># No need to clip those spaces.</span>
+    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;Gym.Space of type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">space</span><span class="p">)</span><span class="si">}</span><span class="s2"> is not supported.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="is_breakpoint"><a class="viewcode-back" href="../../../../api/gym_jiminy/common/utils/helpers.html#gym_jiminy.common.utils.helpers.is_breakpoint">[docs]</a><span class="nd">@nb</span><span class="o">.</span><span class="n">jit</span><span class="p">(</span><span class="n">nopython</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">nogil</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">is_breakpoint</span><span class="p">(</span><span class="n">t</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">dt</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">eps</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Check if &#39;t&#39; is multiple of &#39;dt&#39; at a given precision &#39;eps&#39;.</span>
+
+<span class="sd">    :param t: Current time.</span>
+<span class="sd">    :param dt: Timestep.</span>
+<span class="sd">    :param eps: Precision.</span>
+
+<span class="sd">    :meta private:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">dt</span> <span class="o">&lt;</span> <span class="n">eps</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="n">dt_next</span> <span class="o">=</span> <span class="n">dt</span> <span class="o">-</span> <span class="n">t</span> <span class="o">%</span> <span class="n">dt</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">dt_next</span> <span class="o">&lt;=</span> <span class="n">eps</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">or</span> <span class="p">((</span><span class="n">dt</span> <span class="o">-</span> <span class="n">dt_next</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">eps</span> <span class="o">/</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">False</span></div>
+
+
+<div class="viewcode-block" id="get_fieldnames"><a class="viewcode-back" href="../../../../api/gym_jiminy/common/utils/helpers.html#gym_jiminy.common.utils.helpers.get_fieldnames">[docs]</a><span class="k">def</span> <span class="nf">get_fieldnames</span><span class="p">(</span><span class="n">space</span><span class="p">:</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Space</span><span class="p">,</span>
+                   <span class="n">namespace</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">FieldDictNested</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; Get generic fieldnames from `gym.spaces.Space`, so that it can be used</span>
+<span class="sd">    in conjunction with `register_variables`, to register any value from gym</span>
+<span class="sd">    Space to the telemetry conveniently.</span>
+
+<span class="sd">    :param space: Gym.Space on which to operate.</span>
+<span class="sd">    :param namespace: Namespace used to prepend fields, using &#39;.&#39; delimiter.</span>
+<span class="sd">                      Empty string to disable.</span>
+<span class="sd">                      Optional: Disable by default.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Fancy action space: Trying to be clever and infer meaningful</span>
+    <span class="c1"># telemetry names based on action space</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="p">(</span><span class="n">spaces</span><span class="o">.</span><span class="n">Box</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Tuple</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">MultiBinary</span><span class="p">)):</span>
+        <span class="c1"># No information: fallback to basic numbering</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;.&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="p">(</span><span class="n">namespace</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))))</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">space</span><span class="p">))]</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="p">(</span>
+            <span class="n">spaces</span><span class="o">.</span><span class="n">Discrete</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">MultiDiscrete</span><span class="p">)):</span>
+        <span class="c1"># The space is already scalar. Namespace alone as fieldname is enough.</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">namespace</span><span class="p">]</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">space</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Dict</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="n">space</span><span class="o">.</span><span class="n">spaces</span><span class="p">,</span> <span class="s2">&quot;Dict space cannot be empty.&quot;</span>
+        <span class="n">out</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">FieldDictNested</span><span class="p">],</span> <span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">field</span><span class="p">,</span> <span class="n">subspace</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="n">space</span><span class="o">.</span><span class="n">spaces</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">subspace</span><span class="p">,</span> <span class="n">spaces</span><span class="o">.</span><span class="n">Dict</span><span class="p">):</span>
+                <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="n">field</span><span class="p">:</span> <span class="n">get_fieldnames</span><span class="p">(</span><span class="n">subspace</span><span class="p">,</span> <span class="n">namespace</span><span class="p">)})</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">field</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">out</span>
+    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;Gym.Space of type </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">space</span><span class="p">)</span><span class="si">}</span><span class="s2"> is not supported.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="register_variables"><a class="viewcode-back" href="../../../../api/gym_jiminy/common/utils/helpers.html#gym_jiminy.common.utils.helpers.register_variables">[docs]</a><span class="k">def</span> <span class="nf">register_variables</span><span class="p">(</span><span class="n">controller</span><span class="p">:</span> <span class="n">jiminy</span><span class="o">.</span><span class="n">AbstractController</span><span class="p">,</span>
+                       <span class="n">fields</span><span class="p">:</span> <span class="n">FieldDictNested</span><span class="p">,</span>
+                       <span class="n">data</span><span class="p">:</span> <span class="n">SpaceDictNested</span><span class="p">,</span>
+                       <span class="n">namespace</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Register data from `Gym.Space` to the telemetry of a controller.</span>
+
+<span class="sd">    .. warning::</span>
+<span class="sd">        Variables are registered by reference. Consequently, the user is</span>
+<span class="sd">        responsible to manage the lifetime of the data to avoid it being</span>
+<span class="sd">        garbage collected, and to make sure the variables are updated</span>
+<span class="sd">        when necessary, and only when it is.</span>
+
+<span class="sd">    :param controller: Robot&#39;s controller of the simulator used to register</span>
+<span class="sd">                       variables to the telemetry.</span>
+<span class="sd">    :param field: Nested variable names, as returned by `get_fieldnames`</span>
+<span class="sd">                  method. It can be a nested list or/and dict. The leaf are</span>
+<span class="sd">                  str corresponding to the name of each scalar data.</span>
+<span class="sd">    :param data: Data from `Gym.spaces.Space` to register. Note that the</span>
+<span class="sd">                 telemetry stores pointers to the underlying memory, so it</span>
+<span class="sd">                 only supports np.float64, and make sure to reassign data</span>
+<span class="sd">                 using `np.core.multiarray.copyto` for `[:]` operator.</span>
+<span class="sd">    :param namespace: Namespace used to prepend fields, using &#39;.&#39; delimiter.</span>
+<span class="sd">                      Empty string to disable.</span>
+<span class="sd">                      Optional: Disable by default.</span>
+
+<span class="sd">    :returns: Whether or not the registration has been successful.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Make sure data is at least 1d if numpy array, to avoid undefined `len`</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">atleast_1d</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># By reference</span>
+
+    <span class="c1"># Make sure fields and data are consistent</span>
+    <span class="k">assert</span> <span class="n">fields</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">fields</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="p">(</span>
+        <span class="s2">&quot;fields and data are inconsistent.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Default case: data is already a numpy array. Can be registered directly.</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">issubsctype</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">field</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">fields</span><span class="p">):</span>
+                <span class="k">assert</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fields</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fields</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">list</span><span class="p">):</span>
+                    <span class="n">fields</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;.&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="p">(</span><span class="n">namespace</span><span class="p">,</span> <span class="n">subfield</span><span class="p">)))</span>
+                                 <span class="k">for</span> <span class="n">subfield</span> <span class="ow">in</span> <span class="n">field</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">fields</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="p">(</span><span class="n">namespace</span><span class="p">,</span> <span class="n">field</span><span class="p">)))</span>
+            <span class="n">hresult</span> <span class="o">=</span> <span class="n">controller</span><span class="o">.</span><span class="n">register_variables</span><span class="p">(</span><span class="n">fields</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">hresult</span> <span class="o">==</span> <span class="n">jiminy</span><span class="o">.</span><span class="n">hresult_t</span><span class="o">.</span><span class="n">SUCCESS</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="c1"># Fallback to looping over fields and data iterators</span>
+    <span class="n">is_success</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fields</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="n">fields</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">fields</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+    <span class="k">for</span> <span class="n">subfields</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">fields</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">subfields</span><span class="p">,</span> <span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="nb">list</span><span class="p">))</span>
+        <span class="n">is_success</span> <span class="o">=</span> <span class="n">register_variables</span><span class="p">(</span>
+            <span class="n">controller</span><span class="p">,</span> <span class="n">subfields</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">namespace</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">is_success</span><span class="p">:</span>
+            <span class="k">break</span>
+    <span class="k">return</span> <span class="n">is_success</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, Alexis Duburcq - MIT licence.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
